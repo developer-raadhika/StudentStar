@@ -1,0 +1,313 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f6f4ff;
+  color: #28213f;
+  min-height: 100vh;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+.navbar {
+  background: #fff;
+  padding: 20px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  box-shadow: 0 3px 20px #30205c0b;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.brand {
+  color: #7146e8;
+  font-size: 25px;
+  font-weight: 800;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.navbar div {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.navbar div a {
+  color: #514968;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.navbar div a:hover {
+  color: #8057ed;
+}
+
+.page {
+  max-width: 1150px;
+  min-height: 75vh;
+  margin: auto;
+  padding: 55px 25px 80px;
+}
+
+.page > h1 {
+  font-size: clamp(27px, 4vw, 39px);
+  font-weight: 800;
+  margin-bottom: 12px;
+  color: #30234d;
+}
+
+.page > p {
+  color: #817895;
+  margin-bottom: 25px;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.search-input {
+  display: block;
+  width: 100%;
+  max-width: 510px;
+  margin: 25px 0 35px;
+  padding: 15px 18px;
+  border: 1px solid #e2d8fa;
+  border-radius: 13px;
+  background: #fff;
+  color: #30234d;
+  font-size: 13px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.search-input:focus {
+  border-color: #8057ed;
+  box-shadow: 0 0 0 4px #8057ed18;
+}
+
+.student-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 25px;
+  align-items: stretch;
+}
+
+.student-card {
+  background: #fff;
+  padding: 28px 24px;
+  border: 1px solid #ebe5fa;
+  border-radius: 22px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  animation: fadeIn 0.4s ease;
+  min-width: 0;
+}
+
+.student-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 35px #5536a319;
+  border-color: #d9ccfa;
+}
+
+.avatar {
+  width: 65px;
+  height: 65px;
+  display: grid;
+  place-items: center;
+  border-radius: 20px;
+  color: white;
+  font-size: 21px;
+  font-weight: 800;
+  margin-bottom: 22px;
+  box-shadow: 0 7px 18px #30205c14;
+}
+
+.student-card h2 {
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: #30234d;
+}
+
+.student-card p {
+  font-size: 13px;
+  color: #817895;
+  margin-bottom: 9px;
+  line-height: 1.6;
+}
+
+.year-badge {
+  display: inline-block;
+  margin-top: 5px;
+  padding: 6px 11px;
+  border-radius: 8px;
+  background: #f0ebff;
+  color: #7045d9;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.student-card button {
+  width: 100%;
+  padding: 13px 8px;
+  margin-top: 22px;
+  border: 1px solid #e4d9ff;
+  border-radius: 12px;
+  background: #f5f0ff;
+  color: #7045d9;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.student-card button:hover {
+  background: #e9dfff;
+  transform: translateY(-2px);
+}
+
+.student-card button.saved {
+  background: linear-gradient(110deg, #7547e6, #a178f5);
+  color: white;
+  border-color: transparent;
+}
+
+.student-card button.saved:hover {
+  background: linear-gradient(110deg, #6238cf, #8958e9);
+}
+
+.empty {
+  background: #fff;
+  border: 1px dashed #cdbdf4;
+  border-radius: 20px;
+  padding: 45px 20px;
+  text-align: center;
+  color: #7954d9;
+  line-height: 1.8;
+}
+
+.student-grid > .empty {
+  grid-column: 1 / -1;
+}
+
+.empty h2 {
+  font-size: 21px;
+  margin-bottom: 12px;
+}
+
+.empty p {
+  margin: 10px 0 20px;
+  color: #817895;
+  font-size: 14px;
+}
+
+.explore-btn {
+  display: inline-block;
+  padding: 12px 20px;
+  background: #7954df;
+  color: white;
+  border-radius: 11px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+  transition: 0.25s;
+}
+
+.explore-btn:hover {
+  background: #6238cf;
+  transform: translateY(-2px);
+}
+
+footer {
+  padding: 23px 15px;
+  text-align: center;
+  background: #fff;
+  border-top: 1px solid #ece8f5;
+  color: #88839c;
+  font-size: 13px;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible {
+  outline: 3px solid #a78bfa;
+  outline-offset: 3px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 800px) {
+  .student-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .navbar {
+    padding: 18px 4%;
+  }
+
+  .navbar div {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 520px) {
+  .navbar {
+    flex-direction: column;
+    padding: 17px 12px;
+    gap: 15px;
+  }
+
+  .brand {
+    font-size: 23px;
+  }
+
+  .navbar div {
+    gap: 20px;
+  }
+
+  .navbar div a {
+    font-size: 12px;
+  }
+
+  .page {
+    padding: 35px 18px 55px;
+  }
+
+  .student-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .student-card {
+    padding: 24px;
+  }
+
+  .search-input {
+    font-size: 12px;
+  }
+
+  .empty h2 {
+    font-size: 18px;
+  }
+}
