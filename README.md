@@ -1,16 +1,20 @@
-# React + Vite
+🌟 **StudentStar – Favourite Student Directory**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+StudentStar is a responsive React web application that lets users explore a student directory, search for students, and manage their favourite students in one place.
 
-Currently, two official plugins are available:
+✨ **Key Features**
+- 🔍 Live search by student name, ID, or course.
+- ⭐ Add and remove students from your favourites list.
+- ⚛️ Reusable React components using props.
+- 🔄 React Context API for shared state management.
+- 🧭 React Router for seamless page navigation.
+- 💾 LocalStorage to preserve favourite students after refreshing.
+- 📱 Responsive design for different screen sizes.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+🛠️ **Technologies Used:** React.js, JavaScript, HTML, CSS, React Router, Context API, and Vite.
 
-## React Compiler
+🌐 **Live Demo:** https://developer-raadhika.github.io/StudentStar/
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+💻 **GitHub Repository:** https://github.com/developer-raadhika/StudentStar
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+StudentStar combines a clean user interface with practical React concepts to make student discovery and favourite management simple and enjoyable!
